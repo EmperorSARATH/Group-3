@@ -25,8 +25,21 @@ public class HelloWorldController {
     }
 
 
-    @PostMapping("/hello")
+    @PostMapping("hello")
     public HelloWorld createHello(@RequestBody HelloWorld helloworld) {
         return group3.save(helloworld);
     }
+
+//    @PutMapping("/employees/{id}")
+//    public ResponseEntity<HelloWorld> update(@PathVariable(value = "id") Long hid,
+//                                             @RequestBody HelloWorld hello){
+//        Optional<HelloWorld> hello2 = group3.findById(hid);
+//        hello2.setResult(hello.getResult());
+//
+//        final HelloWorld updatedEmployee = group3.save(hello);
+//        return ResponseEntity.ok(updatedEmployee);
+//    }
+
+
+
 }
