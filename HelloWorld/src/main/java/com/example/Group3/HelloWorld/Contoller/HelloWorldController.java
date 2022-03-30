@@ -25,7 +25,7 @@ public class HelloWorldController {
     }
 
 
-    @PostMapping("/hello")
+    @PostMapping("hello")
     public HelloWorld createHello(@RequestBody HelloWorld helloworld) {
         return group3.save(helloworld);
     }
